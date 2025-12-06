@@ -4,6 +4,19 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="accumulate.h" />
+    <ClInclude Include="numeric_limit.h">
+      <Filter>study</Filter>
+    </ClInclude>
+    <ClInclude Include="accumulate.h">
+      <Filter>study</Filter>
+    </ClInclude>
+    <ClInclude Include="set.h">
+      <Filter>study</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="study">
+      <UniqueIdentifier>{734341e0-79f5-4b86-9d51-25d6db1b9cc9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

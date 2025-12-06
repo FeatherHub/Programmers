@@ -1,0 +1,32 @@
+map 
+  template class map
+  template ----- K, T, C, A
+  orderness: strict weak ordering
+  sorted -> compare fn
+  unique key -> compare fn
+  iterator
+    iterates in ascending order of keys -> compare fn
+    BidirectionalIterator, ConstexprIterator(26)
+
+std::pair<const Key, T>
+  pair type is used to combine possibily different two types
+
+std::pmr::polymorphic_allocator
+
+map is generally slower that unordered_map
+to access individual elements by their key
+but it allows the direction iteration on subsets based on thier orders
+
+element access
+  checked access: at
+  access or insert: []
+
+lookup
+  count: 0 or 1
+  find
+  contains
+
+non-member function
+  ==
+  <=> (20)
+  !=, <, >, <=, >= (removed in 20)

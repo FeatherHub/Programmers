@@ -54,6 +54,7 @@ Val _accumulate(Init begin, Init end, Val v, Op op) {
 
 void test_accumulate() {
 	std::vector v{ 1,2,3,4,5 };
+	
 	int n = _accumulate(v.begin(), v.end(), 1000);
 	std::cout << n << std::endl;
 

@@ -1,9 +1,7 @@
-#include "numeric_limit.h"
-#include "set.h"
+#include "style1.h"
 
 int main() {
 
-	test_multiset();
-
+	style1_generalization({0, 1, 2, 3}, -1);
 	return 0;
-}
+} 

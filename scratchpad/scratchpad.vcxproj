@@ -130,8 +130,10 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="style1.h" />
     <ClInclude Include="accumulate.h" />
     <ClInclude Include="numeric_limit.h" />
+    <ClInclude Include="range_view.h" />
     <ClInclude Include="set.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{3dd71fc9-8435-4313-a252-105b50584406}</ProjectGuid>
-    <RootNamespace>scratchpad</RootNamespace>
+    <ProjectGuid>{0336661a-71ef-4d58-9a8f-4fe7db930915}</ProjectGuid>
+    <RootNamespace>study</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,10 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClInclude Include="accumulate.h" />
+    <ClInclude Include="numeric_limit.h" />
+    <ClInclude Include="range_view.h" />
+    <ClInclude Include="set.h" />
+    <ClInclude Include="style1.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="scratch1.h" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

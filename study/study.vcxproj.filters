@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="set.h">
+      <Filter>study</Filter>
+    </ClInclude>
+    <ClInclude Include="numeric_limit.h">
+      <Filter>study</Filter>
+    </ClInclude>
+    <ClInclude Include="range_view.h">
+      <Filter>study</Filter>
+    </ClInclude>
+    <ClInclude Include="accumulate.h">
+      <Filter>study</Filter>
+    </ClInclude>
+    <ClInclude Include="style1.h">
+      <Filter>style</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="study">
+      <UniqueIdentifier>{11fd255c-dfec-4266-8e09-0acd7e93d3bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="style">
+      <UniqueIdentifier>{bd301f45-0ba5-4838-bb92-39317b18a477}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

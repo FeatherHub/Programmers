@@ -1,7 +1,9 @@
-#include "style1.h"
+#include "scratch1.h"
 
 int main() {
 
-	style1_generalization({0, 1, 2, 3}, -1);
+	scratch1();
+
+
 	return 0;
 } 

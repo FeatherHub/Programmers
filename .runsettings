@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <RunConfiguration>
+    <MaxCpuCount>1</MaxCpuCount>
+    <ResultsDirectory>.\TestResults</ResultsDirectory>
+    <TargetPlatform>x64</TargetPlatform>
+  </RunConfiguration>
+  <GoogleTestAdapterSettings>
+    <SolutionSettings>
+      <Settings>
+        <DebugMode>true</DebugMode>
+        <TimestampOutput>true</TimestampOutput>
+        <ShowReleaseNotes>false</ShowReleaseNotes>
+        <ParseSymbolInformation>true</ParseSymbolInformation>
+        <TraitsRegexesBefore>
+        </TraitsRegexesBefore>
+      </Settings>
+    </SolutionSettings>
+  </GoogleTestAdapterSettings>
+</RunSettings>

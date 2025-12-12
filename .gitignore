@@ -43,6 +43,13 @@
 *.vcxproj.user
 
 .vs/
+.vscode/
+
 x64/
 
 packages/
+
+*.exe
+*.ilk
+*.obj
+*.pdb

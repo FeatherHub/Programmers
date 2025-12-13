@@ -1,9 +1,7 @@
 #include "scratch1.h"
 
 int main() {
+  scratch1();
 
-	scratch1();
-
-
-	return 0;
-} 
+  return 0;
+}

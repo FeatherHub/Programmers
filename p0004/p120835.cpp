@@ -1,8 +1,9 @@
 #include <gtest/gtest.h>
+
 #include "solution.h"
 #include "test.h"
 
 int main() {
-    testing::InitGoogleTest();
-    return RUN_ALL_TESTS();
+  testing::InitGoogleTest();
+  return RUN_ALL_TESTS();
 }

@@ -1,0 +1,10 @@
+BasedOnStyle: Webkit
+
+IndentWidth: 2
+AccessModifierOffset: -2
+ColumnLimit: 0
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: WithoutElse
+BreakBeforeBraces: Attach
+SortIncludes: true
+SpaceAfterCStyleCast: true

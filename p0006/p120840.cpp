@@ -1,22 +1,35 @@
+
 #include <algorithm>
 #include <functional>
-#include <vector>
-
 using namespace std;
 
 int pick_m_from_n(int n, int m) {
   using Integer = unsigned long long;
 
-  // formula: n! / ((n-m)! * m!)
+  // formula: n! / ((n-m)! * m!) = C(n, m)
+  // 1. pick the bigger from (n-m) and m
+  // 2. reduce n! / bigger! to P[bigger+1, n]
+  //   the number of term is (n-bigger)
+  // 3. interleave P[bigger+1,n] / P[smaller]
+  //   purpose: prevent overflow
+  //   the number of term in both numerator and denominator is the same
+  //   because smaller + bigger = n
 
-  vector<int> abc { n, n - m, m };
-  sort(abc.begin(), abc.end(), greater<int>());
-  // a = n! / bigger! = n * (n-1) ... (bigger+1)  b = smaller! asdasd zxczxcxz qweqweqwe
+  // note
+  // P[i, j] means i * (i+1) * ... * j
 
-  // interleave multiply and divide to avoid overflow
+  const Integer bigger = max(n - m, m);
+  const Integer smaller = min(n - m, m);
 
-  return 1;
-  // return a / b;
+  greater<int>();
+
+  Integer prod = 1;
+  for (Integer i = 1; i <= smaller; ++i) {
+    prod *= bigger + i;
+    prod /= i;
+  }
+
+  return static_cast<int>(prod);
 }
 
 int solution(int balls, int share) { return pick_m_from_n(balls, share); }

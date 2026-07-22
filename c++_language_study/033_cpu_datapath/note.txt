@@ -1,0 +1,51 @@
+
+
+register file	2^4 16
+memory			2^8 256
+
+a word can store either instruction or data
+a word is a 4-byte long memory
+
+instruction type field: 00
+0		the word is instruction 
+1		the word is immediate data
+
+[the word was instruction]
+instruction field: 01:03 (remaining field: 04:15)
+
+000		fetch a word from memory address specfied by 04:11 
+		into a register specified by 12:15
+
+		for example, 0 - 000 - 00001111 - 1100
+		fetch a word from m[00001111] into r[1100]
+
+001		add an integer at register#04:07 and an integer at register#08:11
+		and store the result at register#12:15
+
+		for example, 0 - 001 - 0011 - 1100 - 0011
+		fetch and interpret the contents in the r[0011] as an integer value,
+		fetch and interpret the contents in the r[1100] as an integer value,
+		add the two values and store the result in the r[0011]
+
+instruction which contains an immediate data 
+data type field: 01
+0		the data type is integer
+1		the data type is float
+
+target register field: 02:05
+
+[the type was integer]
+sign field: 06
+0		the sign is plus
+1		the sign is minus
+
+quantity field: 07:15
+
+[the type was float]
+sign field: 06
+0		the sign is plus
+1		the sign is minus
+
+exponent field: 
+
+

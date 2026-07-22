@@ -1,0 +1,23 @@
+ 
+getmem(size) return pointer
+delmem(pointer)
+
+memory: char[]
+0 n
+
+memorybit: bool[]
+1 = used
+0 = available
+
+memoryinuse: vector<pair<int, int>>
+first = first address
+second = size
+
+getmem(size)
+first, size -> entry
+
+				first 
+-------------------1----------
+
+
+

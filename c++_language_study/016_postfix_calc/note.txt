@@ -1,0 +1,41 @@
+read a line which is in a postfix format
+
+tokenize the line into two operands and one operator
+ operands are separated by a white space
+ operands may have sign symbol
+ illegal input is ignored
+
+apply atoi > atof to operands
+
+push operands onto the operand stack
+
+switch operator and perform calculation
+
+1. readLine
+2. line decoder
+3. atoi
+
+buf = readLine
+
+line decoder: 
+ while it is scanning the input line, 
+ it is expected to get two operands and one operator
+
+if(meets separator) atoi, push
+ stack is global 
+ return operator type
+
+calculator
+
+ver 2.0
+
+controller-clean inputline
+ remove running white spaces
+ remove leading and trailing white spaces
+
+decoder-number extract part
+ reeuse buffer space
+
+mystr-myatoi
+ handle minus sign
+

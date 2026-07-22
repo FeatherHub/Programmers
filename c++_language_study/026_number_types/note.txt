@@ -1,0 +1,9 @@
+
+
+
+Accessing a member through get method		accesses the copy value of the member.
+Accessing a member through direct name		accesses the member itself.
+
+When you call a get-method for a member		what you see is the copy of the member.
+When you call the name of a member			what you see is the member itself. 
+

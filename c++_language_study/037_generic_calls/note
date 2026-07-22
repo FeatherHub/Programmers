@@ -1,0 +1,57 @@
+
+
+function table 
+	type of arguments
+	type of local variables
+	type of return value
+
+
+generalized call(function name, ...)
+{
+	function name => function table
+		arguments list {type}
+		local variable list {type}
+		return variable list {type}
+
+		{arg : local : return / type}
+
+	push
+	call
+}
+
+call(address)
+
+type1: int(int, int)(int)
+	a function with	one int return value,
+					two int arguements
+					one int local variable, 
+
+type2: void(int*, int*)(int*)
+	a function with no return value
+					two int pointer arguments
+					one int pointer local variable
+
+ex)
+call1(function address fa, int, int)
+{
+	//push arguments
+	push int
+	push int
+	//push local variable
+	push int
+	((void(*)(void))fa)()
+	pop return value
+	push return value
+}
+
+void add()
+{
+	pop local variable tmp
+	pop second argument b
+	pop first argument a
+	//calc
+	push return value
+}
+
+
+

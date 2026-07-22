@@ -1,0 +1,14 @@
+
+
+char sp[10][32]
+int pn = 0
+
+itoa(buf, address, 10)
+addString(buf);
+ copystr(sp[pn], s1); 
+
+mark(sp)
+ (0, i) minIdx
+ insert(sp[i], pos, src)
+
+printf(sp[i]);

@@ -1,0 +1,26 @@
+
+
+
+
+maintain state of condition variables
+	runtime stack
+
+switch(lstate)
+{
+case LOOP_INIT:
+
+case LOOP_CONDITION:
+	check state of condition variables
+		lstate = LOOP_BODY;
+		lstate = LOOP_END;
+		main();
+		return;
+case LOOP_BODY:
+	work with current states of loop_body variables
+	update condition variables
+	lstate = LOOP_CONDITION;
+	main();
+	return;
+case LOOP_END:
+	break;
+}

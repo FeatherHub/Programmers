@@ -1,0 +1,22 @@
+basic six methods of class
+often reffered to as 'special member functions'
+  default constructor
+  copy constructor
+  move constructor
+  destructor
+  copy assigment operator
+  move assignment operator
+
+signature of special member functions
+  default constructor
+    CLASSNAME()
+  destructor
+	~CLASSNAME()
+  copy constructor
+	CLASSNAME(const CLASSNAME&)
+  move constructor
+	CLASSNAME(CLASSNAME&&) noexcept
+  copy assignment operator
+	CLASSNAME& operator=(const CLASSNAME& rhs)
+  move assignment operator
+	CLASSNAME& operator=(CLASSNAME&& rhs) noexcept

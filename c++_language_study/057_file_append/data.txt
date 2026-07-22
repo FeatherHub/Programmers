@@ -1,0 +1,12 @@
+hello world
+this is input
+are you done?
+again
+are you concatenated?
+yes
+
+
+
+again 2
+are you ok?
+Yes I am oK

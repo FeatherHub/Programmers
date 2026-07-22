@@ -1,0 +1,27 @@
+
+
+memory
+ free, heap, dynamic, manual
+ local, stack, automatic,
+
+
+
+
+struct Base
+	pSigM1
+	pSigM2
+
+struct Derive
+	pSigM1
+	pSigM2
+	dMember1
+
+hmem 
+	derive
+
+smem
+	pderive
+	pbase
+
+Base* pb = (Base*)pd;
+pb.pSigM1

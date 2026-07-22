@@ -1,0 +1,14 @@
+/solution0.cpp:8:5: error: no matching function for call to 'transform'
+    transform(s.begin(), s.end(), s.begin(), &tolower);
+    ^~~~~~~~~
+note: candidate template ignored: couldn't infer template argument '_UnaryOperation'
+    transform(_InputIterator __first, _InputIterator __last,
+
+note: candidate function template not viable: requires 5 arguments, but 4 were provided
+    transform(_InputIterator1 __first1, _InputIterator1 __last1,
+
+note: candidate function template not viable: requires 5 arguments, but 4 were provided
+    transform(_ExecutionPolicy&& __exec, _ForwardIterator1 __first, _ForwardIterator1 __last, _ForwardIterator2 __result,
+
+note: candidate function template not viable: requires 6 arguments, but 4 were provided
+    transform(_ExecutionPolicy&& __exec, _ForwardIterator1 __first1, _ForwardIterator1 __last1, _ForwardIterator2 __first2,

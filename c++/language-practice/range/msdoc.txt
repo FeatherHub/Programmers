@@ -1,0 +1,33 @@
+range 
+  iterable
+  begin iterator + sentinel
+  abstracts iterators
+  container as a whole thing
+
+<->
+  iterator-first abstraction
+  iterator-first API 
+  a pair of iterators define a sequence
+  container =
+    container.begin(), container.end()
+
+view
+  lightweight range
+  copy, move - O(1)
+  composable - |
+  lazy eval
+
+  elements in the view
+
+range adaptor: range -> view
+  underlying range is unchanged
+  composable
+  lazy eval
+
+Pattern
+  <algorithm>
+    iterator-first algorithms
+    range-first algorithms --- FP style
+      + concept-enforced contraints
+
+      

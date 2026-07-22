@@ -1,6 +1,0 @@
-Diagnostics:
-  MissingIncludes: Strict
-  UnusedIncludes: Strict
-CompileFlags:
-  Add:
-    - -Wno-unused-result

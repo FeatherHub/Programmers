@@ -54,3 +54,5 @@ Debug/
 *.ilk
 *.obj
 *.pdb
+
+.idea/

@@ -1,6 +1,7 @@
 <Project>
-  <PropertyGroup Condition="'$(FileBasedProgram)' == 'true'">
-    <TargetFramework>net10.0</TargetFramework>
-    <LangVersion>14.0</LangVersion>
-  </PropertyGroup>
+    <PropertyGroup Condition="'$(FileBasedProgram)' == 'true'">
+        <TargetFramework>net10.0</TargetFramework>
+        <LangVersion>14.0</LangVersion>
+        <ImplicitUsings>disable</ImplicitUsings>
+    </PropertyGroup>
 </Project>
